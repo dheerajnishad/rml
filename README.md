@@ -48,4 +48,4 @@ python-decouple==3.4 \
 pytz==2021.1 \
 six==1.15.0 \
 sqlparse==0.4.1 \
-typing-extensions==3.7.4.3 \
+typing-extensions==3.7.4.3 
