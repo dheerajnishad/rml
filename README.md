@@ -9,3 +9,20 @@ Customer Enquiry
 
 Image description:
 ![Capture3](https://user-images.githubusercontent.com/43162312/114266903-a4d03a80-9a16-11eb-9101-d2f34041275c.JPG)
+
+Service Provider Feedback
+-> Service provider receives the mail notification and mail has the url that takes him to the customer enquiry page displaying enquiry details.
+-> The page must have a response text box field which the service provider fills in and submits and upon submitting the customer receives the mail containing the response from the service provider.
+
+Image description: Mail send to service Provider:
+![Capture](https://user-images.githubusercontent.com/43162312/114266975-fb3d7900-9a16-11eb-9f4e-0dfbede6a39a.JPG)
+
+Image description:After open url on mail:
+![Capture1](https://user-images.githubusercontent.com/43162312/114267030-2e800800-9a17-11eb-88e2-bd0edeb27dd1.JPG)
+
+Customer Review
+-> The customer must get a mail notification after 60 minutes containing the url to the customer satisfaction page, the page must ask if the user is (satisfied or unsatisfied). 
+-> upon submission must capture user satisfaction against the enquiry made by the customer.
+-> The url sent to the customer over mail must expire after 30 minutes of sending.
+
+Image description:Mail send to customer:
