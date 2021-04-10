@@ -17,7 +17,7 @@ Service Provider Feedback
 Image description: Mail send to service Provider:
 ![Capture](https://user-images.githubusercontent.com/43162312/114266975-fb3d7900-9a16-11eb-9f4e-0dfbede6a39a.JPG)
 
-Image description:After open url on mail:
+Image description:When open url on mail:
 ![Capture1](https://user-images.githubusercontent.com/43162312/114267030-2e800800-9a17-11eb-88e2-bd0edeb27dd1.JPG)
 
 Customer Review
@@ -26,4 +26,12 @@ Customer Review
 -> The url sent to the customer over mail must expire after 30 minutes of sending.
 
 Image description: Mail send to customer:
+![Capture12](https://user-images.githubusercontent.com/43162312/114268758-7bb4a780-9a20-11eb-84fe-971c00328bd7.JPG)
+
+
+Image description: When open url send on mail:
+![Capture123](https://user-images.githubusercontent.com/43162312/114268829-d64e0380-9a20-11eb-851b-17fe92a35ef6.JPG)
+
+Image description: API :
+![Capture1234](https://user-images.githubusercontent.com/43162312/114268894-2af17e80-9a21-11eb-89f0-bc56b71b1ece.JPG)
 
