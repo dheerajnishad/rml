@@ -25,4 +25,5 @@ Customer Review
 -> upon submission must capture user satisfaction against the enquiry made by the customer.
 -> The url sent to the customer over mail must expire after 30 minutes of sending.
 
-Image description:Mail send to customer:
+Image description: Mail send to customer:
+
