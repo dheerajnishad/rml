@@ -102,7 +102,7 @@ def service_feedback(enquiryid):
         name=enquiry.CustomerName
         feedback=enquiry.Feedback
         email_add = enquiry.Email
-        text_content = "feedback"+feedback+ "\n"\
+        text_content = "feedback :"+ feedback + "\n"\
                         "Click on the below link to provide feedback  " "\n"\
                         "http:/"+"/127.0.0.1:8000/customer-review/"+str(enquiryid)
         subject, sender_email, to ="response from Service Provider", EMAIL_HOST_USER, email_add
