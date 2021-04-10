@@ -16,7 +16,7 @@ from django.utils import timezone
 from datetime import timedelta
 
 
-#enquiry form 
+#Enquiry Form (Home Page).
 @api_view(['GET', 'POST'])
 def enquiry(request):
     if request.method == 'GET':
@@ -52,7 +52,7 @@ def enquiry_details(request):
             return Response(status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+# Mail send to Service Provider.
 def enquiry_mailer(enquiryid):
     try:
         enquiry = Enquiry.objects.get(EnquiryId=enquiryid)
@@ -67,7 +67,7 @@ def enquiry_mailer(enquiryid):
     except:
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
-
+# Feedback Form(Feedback Page)
 @api_view(['GET', 'POST'])
 def feedback(request,pk):
     if request.method == 'GET':
@@ -89,12 +89,13 @@ def feedback(request,pk):
             enquiry.Feedback=feedback
             enquiry.save()
             enquiryid=str(enquiry.EnquiryId)
-            service_feedback(enquiryid,schedule=timedelta(minutes=30))  #send mail to customer after 30 min.     #set minutes=1 for 1 min
+            service_feedback(enquiryid,schedule=timedelta(minutes=60))  #send mail to customer after 60 min.     #set minutes=1 for 1 min
             return render(request,'success.html',{'alert_flag': True})
         except:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
+# Mail send to Customer after Service Provider Feedback
 @background()
 def service_feedback(enquiryid):
     try:
@@ -102,7 +103,7 @@ def service_feedback(enquiryid):
         name=enquiry.CustomerName
         feedback=enquiry.Feedback
         email_add = enquiry.Email
-        text_content = "feedback :"+ feedback + "\n"\
+        text_content = "feedback : "+ feedback + "\n"\
                         "Click on the below link to provide feedback  " "\n"\
                         "http:/"+"/127.0.0.1:8000/customer-review/"+str(enquiryid)
         subject, sender_email, to ="response from Service Provider", EMAIL_HOST_USER, email_add
@@ -114,6 +115,7 @@ def service_feedback(enquiryid):
 
 
 
+#Customer Satisfaction Page
 @api_view(['GET', 'POST'])
 def customer_review(request,pk):
     if request.method == 'GET':
