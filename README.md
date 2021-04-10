@@ -49,3 +49,6 @@ pytz==2021.1 \
 six==1.15.0 \
 sqlparse==0.4.1 \
 typing-extensions==3.7.4.3 
+
+# to run project open 1st terminal and run cmd == python manage.py runserver
+#for background task open 2nd terminal and run cmd == python manage.py process_tasks
