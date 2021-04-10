@@ -39,13 +39,13 @@ Image description: API :
 
 Requirements.txt:
 
-asgiref==3.3.4
-Django==3.2
-django-background-tasks==1.2.5
-django-compat==1.0.15
-djangorestframework==3.12.4
-python-decouple==3.4
-pytz==2021.1
-six==1.15.0
-sqlparse==0.4.1
-typing-extensions==3.7.4.3
+asgiref==3.3.4 \
+Django==3.2 \
+django-background-tasks==1.2.5 \
+django-compat==1.0.15 \
+djangorestframework==3.12.4 \
+python-decouple==3.4 \
+pytz==2021.1 \
+six==1.15.0 \
+sqlparse==0.4.1 \
+typing-extensions==3.7.4.3 \
