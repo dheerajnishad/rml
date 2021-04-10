@@ -140,4 +140,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 # EMAIL_USE_SSL = True
 EMAIL_HOST_USER = config('email') #enter email
-EMAIL_HOST_PASSWORD = config('password') #enter  password
+EMAIL_HOST_PASSWORD = config('password') #enter email  password
