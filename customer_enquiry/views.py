@@ -89,7 +89,7 @@ def feedback(request,pk):
             enquiry.Feedback=feedback
             enquiry.save()
             enquiryid=str(enquiry.EnquiryId)
-            service_feedback(enquiryid,schedule=timedelta(minutes=1))  #send mail to customer after 30 min
+            service_feedback(enquiryid,schedule=timedelta(minutes=30))  #send mail to customer after 30 min.     #set minutes=1 for 1 min
             return render(request,'success.html',{'alert_flag': True})
         except:
             return Response(status=status.HTTP_400_BAD_REQUEST)
@@ -143,3 +143,7 @@ def customer_review(request,pk):
 def error_404(request, exception):
         data = {}
         return render(request,'404.html', data)
+
+def error_400(request, exception):
+        data = {}
+        return render(request,'400.html', data)
