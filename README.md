@@ -15,6 +15,7 @@ Service Provider Feedback
 -> The page must have a response text box field which the service provider fills in and submits and upon submitting the customer receives the mail containing the response from the service provider.
 
 Image description: Mail send to service Provider:
+
 ![Capture](https://user-images.githubusercontent.com/43162312/114266975-fb3d7900-9a16-11eb-9f4e-0dfbede6a39a.JPG)
 
 Image description:When open url on mail:
